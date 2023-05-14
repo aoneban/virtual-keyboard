@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma;
+}
+
+#input {
+  width: 100%;
+  font-size: 20px;
+  padding: 7px 0 0 10px;
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0px auto;
+  padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: gainsboro;
+}
+
+.keyboard__wrapper {
+  max-width: 55.3%;
+  height: auto;
+  background-color: #d5d5d8;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.keyboard__row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 895px;
+  height: auto;
+}
+
+.keyboard__key {
+  position: relative;
+  font-size: 18px;
+  display: inline-block;;
+  order: 2;
+  background-color: #fcfcfc;
+  min-height: 40px;
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  color: #333333;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #333;
+}
+
+.keyboard__key:hover {
+  background-color: aqua;
+}
+
+.Backspace {
+  width: 120px;
+}
+
+.Backspace > .eng,
+.Backspace > .rus,
+.CapsLock > .eng,
+.CapsLock > .rus {
+  position: relative;
+  right: 30%;
+  top: 25%;
+}
+
+.hidden {
+  display: none;
+}
+
+.ShiftLeft,
+.CapsLock {
+  width: 115px;
+}
+
+.ControlRight {
+  width: 54px;
+}
+
+.ShiftRight,
+.Enter {
+  width: 112px;
+}
+
+.Tab {
+  width: 60px;
+}
+
+.Tab > .rus,
+.Tab > .eng,
+.Delete > .rus,
+.Delete > .eng {
+  position: relative;
+  right: 20%;
+  top: 25%;
+}
+
+.Enter > .rus,
+.Enter > .eng,
+.ShiftRight > .rus,
+.ShiftRight > .eng,
+.ShiftLeft > .eng,
+.ShiftLeft > .rus {
+  position: relative;
+  right: 10%;
+  top: 25%;
+}
+
+.MetaLeft > .rus,
+.MetaLeft > .eng,
+.ControlLeft > .rus,
+.ControlLeft > .eng,
+.ControlRight > .rus,
+.ControlRight > .eng,
+.AltLeft > .rus,
+.AltLeft > .eng,
+.AltRight > .rus,
+.AltRight > .eng {
+  position: relative;
+  top: 25%;
+  right: 20%;
+}
+
+.ArrowUp > .rus,
+.ArrowUp > .eng,
+.ArrowLeft > .rus,
+.ArrowLeft > .eng,
+.ArrowRight > .rus,
+.ArrowRight > .eng,
+.ArrowDown > .rus,
+.ArrowDown > .eng {
+  position: relative;
+  right: 10%;
+  top: 25%;
+}
+
+.Tab,
+.Backspace,
+.Delete,
+.MetaLeft,
+.AltLeft,
+.AltRight,
+.Enter,
+.CapsLock,
+.ControlLeft,
+.ControlRight,
+.ArrowUp,
+.ArrowLeft,
+.ArrowRight,
+.ArrowDown,
+.ShiftRight,
+.ShiftLeft {
+  background-color: #bcbfc3;
+  font-weight: bold;
+} 
+
+
+.Space {
+  width: 406px;
+}
+
+.eng {
+  display: block;
+}
+
+.rus {
+  display: none;
+}
+
+.shiftcaps,
+.caps,
+.caseUp {
+  display: none;
+}
+
+.shiftcaps,
+.caseUp,
+.caseDown,
+.caps {
+  position: absolute;
+  top: 26%;
+  left: 40%;
+}
+
+.active {
+  background-color: aqua;
+  border-radius: 50%;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.description {
+  text-align: center;
+  margin-top: 20px;
+}
